@@ -5,21 +5,21 @@
 class CfNuke < Formula
   desc "A command-line tool to delete all resources from a Cloudflare account"
   homepage "https://github.com/arafato/cf-nuke"
-  version "0.8.1"
+  version "0.8.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/arafato/cf-nuke/releases/download/v0.8.1/cf-nuke_0.8.1_darwin_amd64.tar.gz"
-      sha256 "de1a772f48eedf0cd316d2c2c55d2875a2f81cbc0244cd3d8760a42e08e25878"
+      url "https://github.com/arafato/cf-nuke/releases/download/v0.8.2/cf-nuke_0.8.2_darwin_amd64.tar.gz"
+      sha256 "87accf550f88915b164d89b9562e4195e6ced6dcf753730baf3e60eb6a2d3d14"
 
       def install
         bin.install "cf-nuke"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/arafato/cf-nuke/releases/download/v0.8.1/cf-nuke_0.8.1_darwin_arm64.tar.gz"
-      sha256 "5f9174530db2c1def4bab97d2b2599d130df9b8cc1965b9134085102e01e84f3"
+      url "https://github.com/arafato/cf-nuke/releases/download/v0.8.2/cf-nuke_0.8.2_darwin_arm64.tar.gz"
+      sha256 "5a3a20685397137c1e6800cee4f6e83686a3bec8f558f52cb81711a5b21e6ff6"
 
       def install
         bin.install "cf-nuke"
@@ -29,15 +29,15 @@ class CfNuke < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arafato/cf-nuke/releases/download/v0.8.1/cf-nuke_0.8.1_linux_amd64.tar.gz"
-      sha256 "8732558aaf0cc97b912a973d94bbb11559e21785d6cc6091e73c4afabb350af2"
+      url "https://github.com/arafato/cf-nuke/releases/download/v0.8.2/cf-nuke_0.8.2_linux_amd64.tar.gz"
+      sha256 "7ad96ef5417fadada89977b36c9a5377b636426c1a7339bf9786b29a0cb1b4de"
       def install
         bin.install "cf-nuke"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arafato/cf-nuke/releases/download/v0.8.1/cf-nuke_0.8.1_linux_arm64.tar.gz"
-      sha256 "5ff06edb4deda76266e348125a21995299508234aeedd0de879196d39b2153bd"
+      url "https://github.com/arafato/cf-nuke/releases/download/v0.8.2/cf-nuke_0.8.2_linux_arm64.tar.gz"
+      sha256 "e32d099bae7d0c53221f52c8900b76bc2a6c6f58e7080eb018e10422feb86e8a"
       def install
         bin.install "cf-nuke"
       end
