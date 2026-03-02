@@ -5,21 +5,21 @@
 class Orangeshell < Formula
   desc "A TUI dashboard for managing the Cloudflare Developer Platform"
   homepage "https://github.com/arafato/orangeshell"
-  version "1.8.0"
+  version "1.9.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/arafato/orangeshell/releases/download/v1.8.0/orangeshell_1.8.0_darwin_amd64.tar.gz"
-      sha256 "c72604eb2076f0fb4803bba930fb80fffc47c30e4b8a52d8292835b948517bcb"
+      url "https://github.com/arafato/orangeshell/releases/download/v1.9.0/orangeshell_1.9.0_darwin_amd64.tar.gz"
+      sha256 "7c2703fe817ed2c32f7ab2e2eec6d0b60e8f70af36da2b636be6553bcdaa5771"
 
       define_method(:install) do
         bin.install "orangeshell"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/arafato/orangeshell/releases/download/v1.8.0/orangeshell_1.8.0_darwin_arm64.tar.gz"
-      sha256 "9a207281a7bd8d176343d632161fa1ec1e9a8738471501977416fab3c3644224"
+      url "https://github.com/arafato/orangeshell/releases/download/v1.9.0/orangeshell_1.9.0_darwin_arm64.tar.gz"
+      sha256 "d543c519f25d393eb5d5a7ab02253a1d10cb2bcabdd23ef9dfde4e0717baeff8"
 
       define_method(:install) do
         bin.install "orangeshell"
@@ -29,15 +29,15 @@ class Orangeshell < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arafato/orangeshell/releases/download/v1.8.0/orangeshell_1.8.0_linux_amd64.tar.gz"
-      sha256 "79457eb9b45a69ed1d345336cc1c254239311e4733f3df6575ae6471f4a1cc0c"
+      url "https://github.com/arafato/orangeshell/releases/download/v1.9.0/orangeshell_1.9.0_linux_amd64.tar.gz"
+      sha256 "3063c0ca1e813a490286d8830688939ceb9c08e04d7719d1889d0981460f5ed6"
       define_method(:install) do
         bin.install "orangeshell"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arafato/orangeshell/releases/download/v1.8.0/orangeshell_1.8.0_linux_arm64.tar.gz"
-      sha256 "92ebf468c56932dca678633a7e2a7f0bf3b3ad48aa35fd34ae9d530610c03077"
+      url "https://github.com/arafato/orangeshell/releases/download/v1.9.0/orangeshell_1.9.0_linux_arm64.tar.gz"
+      sha256 "d9e83ed3196691ad95e0f0640e1153a6753b5f9fe1ebbe7aec09a40ecc14fd9b"
       define_method(:install) do
         bin.install "orangeshell"
       end
