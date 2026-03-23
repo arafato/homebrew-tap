@@ -5,23 +5,23 @@
 class CfNuke < Formula
   desc "A command-line tool to delete all resources from a Cloudflare account"
   homepage "https://github.com/arafato/cf-nuke"
-  version "0.8.2"
+  version "0.9.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/arafato/cf-nuke/releases/download/v0.8.2/cf-nuke_0.8.2_darwin_amd64.tar.gz"
-      sha256 "87accf550f88915b164d89b9562e4195e6ced6dcf753730baf3e60eb6a2d3d14"
+      url "https://github.com/arafato/cf-nuke/releases/download/v0.9.0/cf-nuke_0.9.0_darwin_amd64.tar.gz"
+      sha256 "0a9f4f3a51b585bdd0f69bf3f4f3f27e26ee937148a4f045d30b69a44ad4d255"
 
-      def install
+      define_method(:install) do
         bin.install "cf-nuke"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/arafato/cf-nuke/releases/download/v0.8.2/cf-nuke_0.8.2_darwin_arm64.tar.gz"
-      sha256 "5a3a20685397137c1e6800cee4f6e83686a3bec8f558f52cb81711a5b21e6ff6"
+      url "https://github.com/arafato/cf-nuke/releases/download/v0.9.0/cf-nuke_0.9.0_darwin_arm64.tar.gz"
+      sha256 "0072794705a47aec0e1afc8ee8c1f2706fc1095d581a21ca173ef06ef14a5d80"
 
-      def install
+      define_method(:install) do
         bin.install "cf-nuke"
       end
     end
@@ -29,16 +29,16 @@ class CfNuke < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arafato/cf-nuke/releases/download/v0.8.2/cf-nuke_0.8.2_linux_amd64.tar.gz"
-      sha256 "7ad96ef5417fadada89977b36c9a5377b636426c1a7339bf9786b29a0cb1b4de"
-      def install
+      url "https://github.com/arafato/cf-nuke/releases/download/v0.9.0/cf-nuke_0.9.0_linux_amd64.tar.gz"
+      sha256 "5087a6b176fe2c4a2302655bb713f826e54852e106452636098c67585984ad00"
+      define_method(:install) do
         bin.install "cf-nuke"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arafato/cf-nuke/releases/download/v0.8.2/cf-nuke_0.8.2_linux_arm64.tar.gz"
-      sha256 "e32d099bae7d0c53221f52c8900b76bc2a6c6f58e7080eb018e10422feb86e8a"
-      def install
+      url "https://github.com/arafato/cf-nuke/releases/download/v0.9.0/cf-nuke_0.9.0_linux_arm64.tar.gz"
+      sha256 "f3946d368fcb449256ceae9b73e4d5c178967cc8876907e44d26632d0dbd32bf"
+      define_method(:install) do
         bin.install "cf-nuke"
       end
     end
